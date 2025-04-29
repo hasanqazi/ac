@@ -6,11 +6,9 @@
 [ext_resource type="Script" path="res://message.gd" id="3_n2qpo"]
 [ext_resource type="Texture2D" uid="uid://b263gtgpn8vps" path="res://message.png" id="3_tqq4x"]
 
-[sub_resource type="Environment" id="Environment_o4851"]
+[sub_resource type="Environment" id="Environment_emfnu"]
 background_mode = 1
-background_color = Color(0.876955, 0.763464, 0.685206, 1)
-tonemap_mode = 2
-glow_enabled = true
+background_color = Color(0.976583, 0.933462, 0.749126, 1)
 
 [sub_resource type="Theme" id="Theme_fm6x1"]
 
@@ -27,7 +25,7 @@ size = Vector2i(1600, 900)
 render_target_update_mode = 4
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer/SubViewport"]
-environment = SubResource("Environment_o4851")
+environment = SubResource("Environment_emfnu")
 
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.92317)
@@ -47,7 +45,7 @@ texture = ExtResource("3_tqq4x")
 expand_mode = 1
 
 [node name="Message" type="RichTextLabel" parent="SubViewportContainer/SubViewport" node_paths=PackedStringArray("diy_card", "nook_card")]
-anchors_preset = 7
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
