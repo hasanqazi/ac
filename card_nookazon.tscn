@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3bwe100xs6i6"]
+
+[ext_resource type="PackedScene" uid="uid://cu0mirkgxigqf" path="res://card.glb" id="1_54g3a"]
+[ext_resource type="Texture2D" uid="uid://wbdl2u1bn43f" path="res://nook_back.png" id="2_xmnc3"]
+[ext_resource type="Texture2D" uid="uid://cjnap3xkusioh" path="res://nook_front.png" id="3_54hp3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ug3ys"]
+shading_mode = 0
+albedo_texture = ExtResource("2_xmnc3")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fipdu"]
+shading_mode = 0
+albedo_texture = ExtResource("3_54hp3")
+
+[node name="Nookazon Card" instance=ExtResource("1_54g3a")]
+
+[node name="Cube" parent="Card" index="0"]
+material_override = SubResource("StandardMaterial3D_ug3ys")
+
+[node name="Cube_001" parent="Card" index="1"]
+material_override = SubResource("StandardMaterial3D_fipdu")
